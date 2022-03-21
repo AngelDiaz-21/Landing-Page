@@ -1,0 +1,164 @@
+.container{
+    max-width: 1200px;
+}
+
+/* ESTILOS HEADER */
+/* TODO: Position relative (padre) y position absolute (hijo) van de la mano*/
+header{
+    background-image: url('assets/fondo1.png');
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo{
+    width: 120px;
+    /* object-fit: fill; */
+    background-size: cover;
+}
+
+.title{
+    color: #5F80E1;
+    font-size: 45px;
+    position: absolute;
+    /* Esto si funciona, se ve mejor cuando la pantalla es pequeña*/
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.btn{
+    background-color: #5F80E1;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+/* ESTILOS NAVBAR */
+nav{
+    z-index: 100;
+}
+
+
+/* ESTILOS DIV CURSOS */
+.cursos{
+    background-color: #5F80E1;
+    
+}
+
+.cursos img{
+    /* Con esto ponemos redondas las imagenes */
+    border-radius: 50%;
+}
+
+.row{
+    margin: 0;
+}
+
+/* ESTILOS DIV NOSOTROS */
+.nosotros{
+    background-image: url('assets/fondo2.png');
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.nosotros img{
+    border-radius: 50%;
+    width: 300px;
+}
+
+.title-nosotros{
+    color: #5F80E1;
+}
+
+.nosotros p{
+    font-size: 14px;
+    
+}
+
+/* ESTILOS DATOS */
+.datos{
+    background-color: #5F80E1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.circulo{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: #B3FBFF;
+}
+
+/* ESTILOS SERVICIOS */
+.servicios{
+    background-image: url('assets/fondo2.png');
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.servicios img{
+    border-radius: 50%;
+    width: 300px;
+}
+
+.servicios p{
+    font-size: 14px;
+}
+
+/* ESTILOS FRASE */
+.frase{
+    background-image: url('assets/fondo3.png');
+    background-size: cover;
+    background-position: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.frase p{
+    font-size: 30px;
+}
+
+/* ESTILO CONTACTO  */
+.contacto{
+    background-image: url('assets/fondo2.png');
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.form-control{
+    border-radius: 50px;
+}
+
+.contacto button{
+    border-radius: 50px;
+}
+
+/* ESTILOS FOOTER */
+footer{
+    background-color: #000036;
+    color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+@media(max-width: 922px){
+    /* ESTILOS NAVBAR */
+    /* APARECE EL FONDO DEL NAVBAR SOLO EL ANCHO ES MENOR AL 922 */
+    .navbar-nav{
+        background-color: #5F80E1;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        padding-left: 20px;
+    }
+}
